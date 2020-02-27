@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  <!-- <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <!-- <script src="js/scripts.js"></script> -->
+  <script src="js/scrpy.js"></script>
+  <title>Date Night</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">
+      <img src="images/heart.png" alt="" /> <a id="link" href="#">Date Night</a>
+      <img src="images/iconmonstr-party-14-48.png" alt="" />
+    </span>
+    <div class="menu">
+      <span><a id="link" href="#themes">Themes</a></span>
+      <span><a id="link" href="#select-theme">Select Themes</a></span>
+      <span><a id="link" href="#about-us">About Us</a></span>
+      <span><a id="link" href="#contact-us">Contact Us</a></span>
+
+      <!-- THIS DISPLAYS THE CURRENT USER NAME -->
+      <!-- TRIAL OUTPUT -->
+      <span class="output"></span>
+      <div id="profileImage" width="10%"></div>
+      <button type="button" class="btn btn-outline-secondary" id="logout"
+        style="float:right; width: 8%;">LogOut</button>
+    </div>
+  </nav>
+  <br />
+  <div class="container">
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/taj.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bollywood</h5>
+              <p>
+                Experience the vibrance of the sub continent.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cuba1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cuba</h5>
+              <p>
+                Take a journey to a place where time stood still, a true time
+                capsule.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="china" src="images/china.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>China</h5>
+              <p>
+                Take an adventure from the traditional to the the futuristic.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/paris.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>France</h5>
+              <p>
+                C'est la vie, and it's always better in Paris.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/egpyt.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Egypt</h5>
+              <p>
+                You've hear of arabian nights right? Look no further.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/japan.jpg" class="d-block w-100" alt="..." />
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Japan</h5>
+              <p>
+                Konnichi wa, visit The Land of the Rising Sun... everything
+                starts here.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div id="themes">
+      <br /><br /><br><br><br>
+      <h4>Themes</h4>
+      <br />
+      <p>
+        With variety being the spice of life, here at Date Night we firmly
+        believe in shaking things it up.
+      </p>
+      <p>
+        If you're tired of the same repetitive dates over and over and over
+        again like we are, don't worry, we're here to help.
+      </p>
+      <p>
+        For this reason we provide several different date night options for
+        you to choose from.
+      </p>
+      <p>
+        We would like to think of ourselves as your very own personal date
+        planners.
+      </p>
+    </div>
+    <div id="select-theme">
+      <br /><br /><br><br><br>
+      <h4>Select Theme</h4>
+      <br />
+      <div class="row m-4">
+        <div class="col-md-4 indiatheme">
+          <img class="img-fluid travel" src="images/india theme.jpg" alt="" />
+          <div>
+            <p id="indiatext" data-toggle="modal" data-target="#exampleModal1">Kuchi Kuchi Hota Hee !</p>
+          </div>
+        </div>
+        <div class="col-md-4 cubatheme">
+          <img class="img-fluid travel" src="images/cuba theme.jpg" alt="" />
+          <div>
+            <p id="cubatext" data-toggle="modal" data-target="#exampleModal2">Ola Mi amore !!</p>
+          </div>
+        </div>
+        <div class="col-md-4 chinatheme">
+          <img class="img-fluid travel" src="images/china theme.jpg" alt="" />
+          <div>
+            <p id="chinatext" data-toggle="modal" data-target="#exampleModal3">我爱你</p>
+          </div>
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col-md-4 paristheme">
+          <img class="img-fluid travel" src="images/paris theme.jpg" alt="" />
+          <div>
+            <p id="paristext" data-toggle="modal" data-target="#exampleModal4">Je t'aime</p>
+          </div>
+        </div>
+        <div class="col-md-4 egypttheme">
+          <img class="img-fluid travel" src="images/egypt theme.jpg" alt="" />
+          <div>
+            <p id="egypttext" data-toggle="modal" data-target="#exampleModal5">ahbak</p>
+          </div>
+        </div>
+        <div class="col-md-4 japantheme" data-toggle="modal" data-target="#exampleModal6">
+          <img class="img-fluid travel" src="images/japan.jpg" alt="" />
+          <div>
+            <p id="japantext">Watashi wa, anata o aishitemasu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about-us">
+      <br /><br /><br><br><br>
+      <h4>About Us</h4>
+      <br />
+      <p>
+        Welcome to Date Night, your first and last stop for everything you
+        need for the perfect date experience.
+      </p>
+      <p>
+        We would like to think of ourselves as your very own personal date
+        planners.
+      </p>
+    </div>
+    <div id="team">
+
+      <br /><br /><br><br><br>
+      <h4>The Team</h4>
+      <br />
+      <div class="row top">
+        <div class="col-md-4">
+          <!-- <<<<<<< HEAD <img class="profile img-fluid" src="images/iconmonstr-user-20-120.png" alt="" />
+          <h5>Charles</h5>
+          <h6>Founder</h6>
+          <h6>Front-End Development</h6>
+          ======= -->
+          <img class="profile img-fluid nona" src="images/Charles.jpg" alt="" />
+          <h5>Charles</h5>
+          <h6>Founder</h6>
+          <h6>Front-End Development</h6>
+          <h6>User Interface Design</h6>
+
+        </div>
+        <div class="col-md-4">
+          <img class="profile img-fluid" src="images/koshin.jpg" alt="" />
+          <h5>Koshin</h5>
+          <h6>Co-founder</h6>
+          <h6>Front-End Development</h6>
+          <h6>User Interface Design</h6>
+        </div>
+        <div class="col-md-4">
+          <img class="profile img-fluid nona" src="images/Greg.jpg" alt="" />
+          <h5>Greg</h5>
+          <h6>Co-founder</h6>
+          <h6>Front-End Development</h6>
+          <h6>Scrum Master</h6>
+        </div>
+      </div>
+      <div class="row bottom">
+        <div class="col-md-6">
+          <!-- <<<<<<< HEAD <img class="profile img-fluid" src="images/iconmonstr-user-20-120.png" alt="" />
+          <h5>Bella</h5>
+          <h6>Co-founder</h6>
+          <h6>Back-End Development</h6>
+          ======= -->
+          <img class="profile img-fluid" src="images/IMG_20181112_001611_900.JPG" alt="" />
+          <h5>Bella</h5>
+          <h6>Co-founder</h6>
+          <h6>Back-End</h6>
+          <h6>Business Logic & Debugging</h6>
+        </div>
+        <div class="col-md-6">
+          <img class="profile img-fluid" src="images/WILBRONE-OKOTH.JPG" alt="" />
+          <h5>Will</h5>
+          <h6>Co-founder</h6>
+          <h6>Back-End Development</h6>
+        </div>
+      </div>
+    </div>
+    <div>
+      <br /><br />
+      <h4 id="contact-us">Contact Us</h4>
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="600" height="500" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=ngong%20lane&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+              <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor discount
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 contact-info">
+          <p><strong>Address:</strong> 3453 Ngong Ln</p>
+          <p><strong>Tel:</strong> 070 000 DATE</p>
+          <p><strong>E-mail:</strong> Date@datenight.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h6>Back-End</h6>
+  <h6>Business Logic & Debugging</h6>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="contact-us">
+    <br /><br /><br><br><br>
+    <h4 id="contact-us">Contact Us</h4>
+    <br />
+    <div class="row">
+      <div class="col-md-12 contact-info">
+        <span><img class="visit" src="images/location.png" alt=""><strong>Address:</strong> 3453 Ngong Ln</span> &nbsp;
+        &nbsp;
+        <span><img class="call" src="images/phone.png" alt=""><strong>Tel:</strong> 070 000 DATE</span> &nbsp; &nbsp;
+        <span><img class="message" src="images/mail.png" alt=""> &nbsp; <strong>E-mail:</strong>
+          Date@datenight.com</span>
+      </div>
+      <div class="col-md-12 contact-info">
+        <div class="mapouter">
+          <div class="gmap_canvas img-fluid">
+            <iframe width="1200" height="400" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Ngong%20lane&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              scrolling="no" marginheight="0" marginwidth="0"> </iframe>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 400px;
+              width: 1200px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 400px;
+              width: 1200px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <div class="container">
+      <div class="row icons">
+        <img class="img-fluid social" src="images/iconmonstr-facebook-5-72.png" alt="" />
+
+        <img class="img-fluid social" src="images/iconmonstr-twitter-5-72.png" alt="" />
+
+        <img class="img-fluid social" src="images/iconmonstr-instagram-15-72.png" alt="" />
+
+        <img class="img-fluid social" src="images/iconmonstr-whatsapp-5-72.png" alt="" />
+
+        <img class="img-fluid social" src="images/iconmonstr-youtube-5-72.png" alt="" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+  <!--   -->
+  <!-- Modal for India-->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck1">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">India</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="indiapckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any Indian cuisine
+            <br>
+            <strong>Acivity</strong>: (any Indian related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Cuba -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cuba</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="cubapckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any Cuban cuisine
+            <br>
+            <strong>Acivity</strong>: (any Cuban related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel
+            to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for China -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck3">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">China</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="chinapckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any Chinese cuisine
+            <br>
+            <strong>Acivity</strong>: (any Chinesne related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel
+            to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Paris -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Paris</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="parispckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any French cuisine
+            <br>
+            <strong>Acivity</strong>: (any French related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel
+            to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Egypt -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck5">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Egypt</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="egyptpckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any Egyptian cuisine
+            <br>
+            <strong>Acivity</strong>: (any egyptian related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel
+            to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Japan -->
+  <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bck6">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Japan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="japanpckgs">
+            <strong>Package</strong>
+            <br>
+            <strong>Food </strong>: All inclusive private Chef with your choice of any Japanese cuisine
+            <br>
+            <strong>Acivity</strong>: ( any Japanese related activity for the night )
+            <br>
+            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
+            travel to different city
+            <br>
+            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
+            <br>
+            <strong>Pricing</strong>: Contact us at package@datenight.com
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- =======
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

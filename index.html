@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Date Night Landing Page</title>
+</head>
+
+<body id="landingbg">
+  <nav id="landing" class="navbar sticky-top">
+    <span id="logo" class="navbar-brand mb-0 h1">
+      <img src="images/wheart.png" alt="" /> Date Night
+      <img src="images/wchampagne.png" alt="" />
+    </span>
+  </nav>
+  <div id="landing-content" class="container">
+    <div class="row">
+      <div id="info" class="col-md-6">
+        <h1 id="date" style="border-bottom: 1px solid white; padding-bottom: 23px; ">
+          Date Night
+        </h1>
+        <br />
+        <p id="slogan">"Saving relationships 1 date at a time"</p>
+        <br />
+        <p>
+          Welcome to Date Night. We are the premier date experience platform
+          providing you with theme based dates like no other.
+        </p>
+        <br />
+        <p>
+          Once you sign up you'll get access to various themes to you can
+          choose from and we'll provide the set-up, cuisine, activities, and
+          any other necessary items to make this experience the best you've
+          ever had.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title" id="head1">Login</h3>
+
+            <!-- this is hidden onload -->
+            <h3 class="card-title" id="head2">SignUp</h3>
+
+            <br />
+            <hr />
+            <br />
+            <form class="down" id="sign-in">
+              <div class="form-group" id="loginn">
+                <label for="user_name" style="float: left;">User Name</label><br />
+                <input type="text" name="user_name" id="user_name" class="form-control" required />
+                <br />
+                <label for="password" style="float: left;">Password</label><br />
+                <input type="password" name="password" id="password" class="form-control" required /><br />
+
+                <button type="submit" class="btn btn-danger log" id="bttn">
+                  Login
+                </button>
+                <!-- this toggles the sign up form -->
+                <!-- <button class="btn-danger sign">Sign Up</button> <br /><br /> -->
+                <button type="button" class="btn btn-danger" id="btr">Sign Up</button>
+
+                <hr />
+                <br />
+                <a href="#">Reset Password?</a>
+              </div>
+            </form>
+
+            <!-- form for signup -->
+            <form class="up" id="sign-up">
+              <div class="form-group" id="signupp">
+                <br />
+                <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Full Name"
+                  required />
+                <br />
+
+                <input type="text" name="u_name" id="u_name" class="form-control" placeholder="User Name" required />
+                <br />
+
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required />
+                <br />
+
+                <input type="password" name="password" id="p-word" class="form-control" placeholder="Password"
+                  required /><br />
+
+                <!-- toggles back the sign in -->
+                <!-- <button class="btn-danger log" id="cancel">Cancel</button> -->
+                <button type="button" class="btn btn-danger" id="btr2">Cancel</button>
+
+
+                <button type="submit" class="btn btn-danger log">
+                  Sign Up
+                </button> <br /><br />
+              </div>
+            </form>
+            <!-- end of signup form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

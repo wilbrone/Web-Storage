@@ -1,0 +1,400 @@
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#link {
+  color: black;
+  text-decoration: black;
+}
+
+/* ****************************************** */
+.menu {
+  /* border: solid; */
+  width: 70%;
+}
+
+.menu a {
+  padding: 0 50px;
+}
+
+.carousel-caption {
+  color: white;
+}
+
+#china {
+  height: 740px;
+}
+
+.icons {
+  text-align: center;
+  margin: auto;
+}
+
+.social {
+  display: block;
+  padding: 0 20px;
+  width: 15%;
+  height: 15%;
+  margin: 20px auto;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 170px;
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5,
+h4,
+p {
+  text-align: center;
+}
+
+h6 {
+  color: grey;
+  text-align: center;
+}
+
+.top {
+  margin-bottom: 40px;
+}
+
+.mapouter {
+  position: relative;
+  margin: auto;
+}
+
+.gmap_canvas {
+  display: block;
+  overflow: hidden;
+  background: none !important;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 30px 0 50px 0;
+}
+
+.travel {
+  height: 300px;
+  width: 400px;
+}
+
+#landing {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#landingbg {
+  background-image: url("../images/cherry.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+
+#landing-content {
+  color: white;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.card-title {
+  color: black;
+}
+
+label {
+  color: black;
+  text-align: left;
+}
+
+#bttn,
+#btr {
+  margin-bottom: 10px;
+}
+
+
+#date {
+  margin: 20px 0 0 0;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bolder;
+}
+
+.call,
+.visit,
+.message {
+  height: 40px;
+  width: 40px;
+}
+
+hr {
+  margin: 0;
+}
+
+#info {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#info p {
+  text-align: left;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+#sign-up {
+  display: none;
+}
+
+#head2 {
+  display: none;
+}
+
+#cubatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#indiatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#chinatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#paristext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#egypttext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#japantext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.bck1,
+.bck2,
+.bck3,
+.bck4,
+.bck5,
+.bck6 {
+  background-color: black;
+  color: white;
+}
+
+#exampleModal1 {
+  background-image: url(../images/Indianfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal2 {
+  background-image: url(../images/tango2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal3 {
+  background-image: url(../images/chinesefood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal4 {
+  background-image: url(../images/Francefood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal5 {
+  background-image: url(../images/arabicfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal6 {
+  background-image: url(../images/Japanfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nona {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+;
+
+#indiapckgs,
+#cubapckgs,
+#chinapckgs,
+#parispckgs,
+#egyptpckgs,
+#japanpckgs {
+  font-family: "Mansalva", cursive;
+}
+
+#exampleModalLabel {
+  font-family: "Mansalva", cursive;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* GIVES THE FIRST LETTER AS THE PROFILE PIC */
+#profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #512DA8;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 125%;
+
+  position: absolute;
+  top: 15%;
+  right: 9%;
+  /* margin: 20px 0; */
+}
+
+.output {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Oleo Script', cursive;
+}
+
+
+
+/* .indiatheme,
+.cubatheme,
+.chinatheme {
+  float: left;
+  width: 110%;
+  padding: 5%;
+  margin: auto;
+}
+
+.paristheme,
+.egypttheme,
+.japantheme {
+  float: left;
+  width: 110%;
+  padding: 5%;
+  margin: auto;
+} */
